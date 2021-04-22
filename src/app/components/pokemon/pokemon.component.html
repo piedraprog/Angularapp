@@ -1,0 +1,21 @@
+<!-- esto es una plantilla -->
+<ul class="pokemons">
+
+  <!-- el let <la variable que tiene a la lista > of <cuenta de los elementos en ella>-->
+  <li *ngFor='let pokemon of pokemon' [class.salected]="pokemons === selectedPokemon"  (click)="onSelect(pokemon)"> 
+    <span class="badge">{{pokemon.id}}</span> {{pokemon.name}}
+  </li>
+
+</ul>
+
+<ng-container *ngIf="selectedPokemon"> 
+  <!-- hacer un card para el pokemon selecionado -->
+  <div class="Pokeselect">
+    <h2>{{ selectedPokemon.name | uppercase }}</h2>
+    <div><span>id:</span>{{selectedPokemon.id}}</div>
+    <div>
+      <label for="pokemon-name">pokemon name:</label>
+      <input id="pokemon name" [(ngModel)]="selectedPokemon.name"  placeholder="Name">
+    </div>
+  </div>
+</ng-container>

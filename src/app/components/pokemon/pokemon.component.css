@@ -1,0 +1,59 @@
+/* pokemonsComponent's private CSS styles */
+.pokemons {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+}
+
+.pokemons li{
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+    border: black 1px solid;
+    
+}  
+
+.pokemons li:hover {
+    background-color: #ff0000;
+    left: .1em;
+}
+.pokemons li.selected {
+    background-color: black;
+    color: white;
+}
+.pokemons li.selected:hover {
+    background-color: #d41f1f;
+    color: white;
+    
+}
+
+.pokemons li.selected:active {
+    background-color: black;
+    color: white;
+}
+.pokemons .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#f70000;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px;
+}
+
+input {
+    padding: .5rem;
+}
+
+
