@@ -1,59 +1,105 @@
-/* pokemonsComponent's private CSS styles */
-.pokemons {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
+/* pokemonsComponent's private CSS styles 
+    Container styles
+*/
+.LC-container {
+    display: flex;
+    justify-content: center;   
+    flex-direction: row;
+    
 }
 
-.pokemons li{
+.card-container{
+    background-color: white;
+    width: 50vh;
+    height: 90vh;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.15);
+    backdrop-filter: blur(5px);
+}
+.card-container1{
+    background-color: white;
+    width: 60vh;
+    height: 90vh;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.15);
+    backdrop-filter: blur(5px);
+}
+
+.card-container h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffff;
+    padding-top: 10px;
+} 
+
+/* card styles */
+.card-container .pokemons {
+    margin: auto;
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    width: 15em;
+   
+}
+
+.card-container .pokemons li{
     cursor: pointer;
     position: relative;
     left: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: #C876EB;
     margin: .5em;
     padding: .3em 0;
     height: 1.6em;
-    border-radius: 4px;
-    border: black 1px solid;
-    
+    border-radius: 4px;  
+    text-transform: capitalize;  
+    color: white;
 }  
 
-.pokemons li:hover {
-    background-color: #ff0000;
+.card-container .pokemons li:hover {
+    background-color:#D45FC5;
+    
     left: .1em;
 }
-.pokemons li.selected {
-    background-color: black;
+.card-container .pokemons li.selected {
+    background-color:#D45FC5;
     color: white;
 }
-.pokemons li.selected:hover {
-    background-color: #d41f1f;
+
+.card-container .pokemons li.selected:hover {
+    background-color: #C876EB;
     color: white;
     
 }
 
-.pokemons li.selected:active {
-    background-color: black;
+.card-container .pokemons li.selected:active {
+    background-color: rgb(245, 240, 240);
     color: white;
 }
-.pokemons .badge {
-    display: inline-block;
+
+.card-container .pokemons .badge {
     font-size: small;
-    color: white;
+    display: inline-block;
+    color:#ffff;
     padding: 0.8em 0.7em 0 0.7em;
-    background-color:#f70000;
+    background-color:#F66F8A;
     line-height: 1em;
     position: relative;
     left: -1px;
     top: -4px;
     height: 1.8em;
     margin-right: .8em;
-    border-radius: 4px;
+    border-radius: 2px;
 }
+
 
 input {
     padding: .5rem;
 }
+
 
 

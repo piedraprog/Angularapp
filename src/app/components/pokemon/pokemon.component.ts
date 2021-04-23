@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {  POKEMONS } from './pokedata/mock-pokemon';
-import { Pokemon } from './pokedata/pokemon';
+import {  POKEMONS } from '../pokedata/mock-pokemon';
+import { Pokemon } from '../pokedata/pokemon';
 
 @Component({
   selector: 'app-pokemon', //nombre de la etiqueta que invoca al componente
@@ -11,7 +11,7 @@ import { Pokemon } from './pokedata/pokemon';
 
 export class PokemonComponent  {
 
-  nombre = "Pokemones"; //atributo que usa la plantilla al crearse llamandola con doble llave
+  listTitle = "Poke List"; //atributo que usa la plantilla al crearse llamandola con doble llave
 
   // define una propiedad DE COMPONENTE llamada pokemon para hacer manejable el array POKEMONS
   pokemon = POKEMONS;

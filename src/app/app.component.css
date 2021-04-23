@@ -1,0 +1,33 @@
+
+/* STYLE OF CONTAINER  */
+.page-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container .img-back{
+    position: absolute;
+    z-index: 0;
+}
+
+.page-container .img-back img{ 
+    margin: -10px;
+    height: 115vh;
+    width: 105%;
+    
+}
+
+.page-container .con-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffff;
+    z-index: 1;
+    
+} 
+
+
+
+  
+
