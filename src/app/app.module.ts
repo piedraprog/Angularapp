@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
 import { MessageserviceComponent } from './components/messageservice/messageservice.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 
@@ -15,13 +17,15 @@ import { MessageserviceComponent } from './components/messageservice/messageserv
     AppComponent,
     PokemonComponent,
     PokemonDetailComponent,
-    MessageserviceComponent
+    MessageserviceComponent,
+    DashboardComponent
    
     
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

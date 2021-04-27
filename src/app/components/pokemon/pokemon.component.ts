@@ -16,29 +16,18 @@ export class PokemonComponent implements OnInit {
   listTitle = "Poke List"; //atributo que usa la plantilla al crearse llamandola con doble llave
 
   // define una propiedad DE COMPONENTE llamada pokemon para hacer manejable el array POKEMONS
-  pokemon: Pokemon[]=[];
+  pokemon: Pokemon[];
 
+  constructor(private PokemonService: PokemonService, private messageService:MessageService){}
+    
+  ngOnInit():void{
+    this.getPokemons();
+  }
+  
   getPokemons(): void{
      this.PokemonService.getPokemons()
         .subscribe(pokemons => this.pokemon = pokemons)
   }
 
-
-  ngOnInit():void{
-      this.getPokemons();
-  }
-
-  constructor(private PokemonService: PokemonService, private messageService:MessageService){}
-
   
-  
-
-  selectedPokemon?: Pokemon;
-  onSelect(pokemon: Pokemon): void{
-    this.selectedPokemon = pokemon;
-    this.messageService.add(`pokemon component: selected pokemon id=${pokemon.id}`)
-  }
-  
-  
-
 }

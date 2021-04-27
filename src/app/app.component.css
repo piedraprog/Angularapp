@@ -16,7 +16,7 @@
     margin: -10px;
     height: 115vh;
     width: 105%;
-    
+    display: none;
 }
 
 .page-container .con-title {

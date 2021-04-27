@@ -1,11 +1,13 @@
-<ng-container *ngIf="pokemon">
-  <!-- hacer un card para el pokemon selecionado -->
-  <div class="card-detail">
-    <h2>{{ pokemon.name | uppercase }}</h2>
-    <div><span>id:</span>{{ pokemon.id }}</div>
-    <div>
-      <label for="pokemon-name">pokemon name:</label>
-      <input id="pokemon name" [(ngModel)]="pokemon.name" placeholder="Name" />
-    </div>
-  </div>
-</ng-container>
+<!-- <div class="card-container"> -->
+  <ng-container *ngIf="pokemon">
+    <!-- hacer un card para el pokemon selecionado -->
+    <!-- <div class="card-detail"> -->
+      <h2>{{ pokemon.name | uppercase }}</h2>
+      <div><span>id:</span>{{ pokemon.id }}</div>
+      <div>
+        <label for="pokemon-name">pokemon name:</label>
+        <input id="pokemon name" [(ngModel)]="pokemon.name" placeholder="Poke Name" />
+      </div>
+    <!-- </div> -->
+  </ng-container>
+<!-- </div> -->

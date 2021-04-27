@@ -1,18 +1,20 @@
 <!-- esto es una plantilla -->
-<div class="LC-container">
-  <div class="card-container"> 
-     <h1 style="color: black;"> {{listTitle}} </h1>
+<!-- <div class="LC-container">
+  <div class="card-container">  -->
+     <h1> {{listTitle}} </h1>
     <ul class="pokemons">
       <!-- el let <la variable que tiene a la lista > of <cuenta de los elementos en ella> -->
-        <li *ngFor='let pokemon of pokemon' [class.selected]="pokemons === selectedPokemon"  (click)="onSelect(pokemon)"> 
-          <span class="badge">{{pokemon.id}}</span> {{pokemon.name}}
+        <li *ngFor='let pokemon of pokemon'> 
+          <a routerLink="/detail/{{pokemon.id}}">
+            <span class="badge">{{pokemon.id}}</span>{{pokemon.name}}
+          </a>
         </li>
         
     </ul>
-  </div> 
+  <!-- </div> 
     
   <div class="card-container1">
-    <app-pokemon-detail [pokemon]="selectedPokemon"></app-pokemon-detail>
+    
   </div>
   
-</div>
+</div> -->

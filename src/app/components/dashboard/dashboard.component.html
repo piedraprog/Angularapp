@@ -1,0 +1,7 @@
+<h2>Top Pokemons</h2>
+<div class="pokemons-menu">
+  <a *ngFor="let pokemon of pokemon"
+      routerLink="/detail/{{pokemon.id}}" >
+    {{pokemon.name}}
+  </a>
+</div>
