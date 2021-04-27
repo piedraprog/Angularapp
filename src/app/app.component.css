@@ -5,18 +5,18 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .page-container .img-back{
     position: absolute;
     z-index: 0;
-}
-
-.page-container .img-back img{ 
+    height: 315vh;
+    width: 500vh;
+    background-image: url('../assets/fondo2.png');
+    background-repeat: repeat;
     margin: -10px;
-    height: 115vh;
-    width: 105%;
-    display: none;
+    
 }
 
 .page-container .con-title {
@@ -27,7 +27,34 @@
     
 } 
 
+.page-container nav{
+   
+    width: 50%;
+    margin: auto;
+    height: 40px;
+    border-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 0 0 1rem rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.15);
+    backdrop-filter: blur(5px);
 
+}
+.page-container nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-left: 20px;
+    
+    border-color: black;
+    font-size: 150%;
+}
 
+.page-container nav a:hover{
+    color: black;
+
+}
   
-
+.others{
+     z-index: 1; 
+     
+}

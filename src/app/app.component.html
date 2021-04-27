@@ -1,15 +1,17 @@
-<!-- <div class="page-container"> -->
-    <!-- <div class="img-back"> -->
-        <!-- <img src="../assets/fondo1.jpg"   alt="fondo"> -->
-    <!-- </div> -->
-    <!-- <div class="con-title"> -->
+<div class="page-container"> 
+    <div class="img-back">
+        <img src="../assets/fondo2.png"   alt="fondo">
+    </div>
+   <div class="con-title"> 
         <h1 >{{title}}</h1>
         <nav>
             <a routerLink="/dashboard">Dashboard</a>
-            <a routerLink="/pokemons">Pokemons</a>
+            <a routerLink="/pokemons">Characters</a>
         </nav>
-    <!-- </div> -->
-    <router-outlet></router-outlet>
-    <app-messageservice></app-messageservice>
-<!-- </div> -->
+    </div>
+    <div class="others">
+        <router-outlet></router-outlet>
+        <app-messageservice></app-messageservice>
+    </div>
+</div>
 

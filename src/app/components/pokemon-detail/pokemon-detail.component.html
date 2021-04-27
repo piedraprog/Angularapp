@@ -1,15 +1,16 @@
-<!-- <div class="card-container"> -->
-  <ng-container *ngIf="pokemon">
-    <!-- hacer un card para el pokemon selecionado -->
-    <div class="card-detail">
+<div *ngIf="pokemon" class="card-container">
+     
       <h2>{{ pokemon.name | uppercase }}</h2>
-      <div><span>id:</span>{{pokemon.id }}</div>
-      <div>
-        <img src="{{pokemon.image}}" alt="">
-        <label for="pokemon-name">Name:</label>{{pokemon.name}}
-        
+      <div class="C-img">
+        <img src="{{pokemon.image}}" alt="{{pokemon.name}}.jpg">
       </div>
-      <!-- <button (click)="save()">save</button> -->
-    </div>
-  </ng-container>
-<!-- </div> -->
+      <div class="C-info">
+        <label for="C-name">Name:{{pokemon.name}}</label>
+        <label for="C-id">Id:{{pokemon.id}}</label>
+        <label for="C-gender">Gender: {{pokemon.gender}}</label>
+        <label for="C-status">Status: {{pokemon.status}}</label>
+        <label for="C-species">Species: {{pokemon.species}}</label>      
+        <button (click)="goBack()">Go back</button>
+
+      </div>
+</div>

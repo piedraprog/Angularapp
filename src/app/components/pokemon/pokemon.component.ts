@@ -12,7 +12,7 @@ import {Characters, Result} from '../../models';
 
 export class PokemonComponent implements OnInit {
 
-  listTitle = "Poke List"; //atributo que usa la plantilla al crearse llamandola con doble llave
+  listTitle = "Characters"; //atributo que usa la plantilla al crearse llamandola con doble llave
 
   // define una propiedad DE COMPONENTE llamada pokemon para hacer manejable el array POKEMONS
   //  pokemon: Pokemon[];

@@ -1,18 +1,66 @@
-/* .card-container{
+.card-container{
     background-color: white;
     width: 60vh;
-    height: 90vh;
-    margin: auto;
-    border-radius: 5px;
+    height: 95vh;
+    margin-top: 20px;
     box-shadow: 0 0 1rem rgba(0,0,0,.2);
     border-radius: 5px;
     background-color: rgba(255,255,255,.15);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    padding: 20px;
 }
 
-.card-container h1{
+.card-container h2{
     text-align: center;
     text-transform: uppercase;
     color: #ffff;
-    padding-top: 10px;
-}  */
+    padding-top: -10px;
+} 
+
+.card-container .C-img{
+    width: 100%;
+    height: 50%;
+    
+    z-index: 2;
+    display: flex;  
+    justify-content: center;
+}
+
+.card-container .C-img img{
+    border-radius: 50%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.637);
+    
+}
+
+.card-container .C-info{
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-container .C-info label{
+    padding: 5px;
+    padding-bottom: 10px;
+    text-transform: initial;
+    font-weight: bold;
+    font-size: large;
+}
+
+.card-container button{
+    padding: 10px 5px 10px 5px ;
+    align-self: center;
+    background-color: rgb(31, 127, 190);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #ffff;
+    font-size: medium;
+}
+
+.card-container button:hover{
+    background-color: rgb(31, 171, 190);
+    color: black;
+}

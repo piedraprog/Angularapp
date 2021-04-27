@@ -1,7 +1,9 @@
-<h2>Top Pokemons</h2>
-<div class="pokemons-menu">
-  <a *ngFor="let character of character"
-      routerLink="/detail/{{character.id}}" >
+<div class="c-top">
+  <h2>Top Characters</h2>
+  <div class="pokemons-menu">
+    <a *ngFor="let character of character"
+    routerLink="/detail/{{character.id}}" >
     {{character.name}}
   </a>
+</div>
 </div>

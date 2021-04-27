@@ -44,7 +44,7 @@ export class PokemonService {
           return resp.results.map( result => Result.resultJson(result))
         }),
         tap(_=> this.log('fetched characters')),
-        catchError(this.handleError<Characters>('getPokemons'))
+        catchError(this.handleError<Characters>('Get Characters'))
       )
   }  
   
@@ -55,12 +55,12 @@ export class PokemonService {
     return this.http.get(url)
       .pipe(
         tap(_=> this.log('fetched characters')),
-        catchError(this.handleError<Characters>('getPokemon :'))
+        catchError(this.handleError<Characters>(`Get Character: ${id}`))
       )
   }
 
   private log(message:string) {
-    this.messageService.add(`pokeService: ${message}`);
+    this.messageService.add(`Character Service: ${message}`);
   };
 
   //IN CASE OF THE API ACCEPT CHANGES 

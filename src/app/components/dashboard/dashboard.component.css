@@ -1,0 +1,36 @@
+.c-top{
+    
+    text-align: center;
+    padding: 0px 10px 10px 15px;
+    color: white;
+    font-weight: bolder;
+    
+    box-shadow: 0 0 1rem rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.15);
+    backdrop-filter: blur(5px);
+}
+
+.c-top h1{
+    border-color: black 1px solid;
+}
+
+.c-top a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+
+.c-top a::before{
+    content: "-";
+
+}
+
+.c-top a:hover{
+    color:rgb(48, 45, 45);
+    cursor: pointer;
+    text-shadow: none;
+}
