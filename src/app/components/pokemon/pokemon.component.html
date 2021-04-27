@@ -4,9 +4,10 @@
      <h1> {{listTitle}} </h1>
     <ul class="pokemons">
       <!-- el let <la variable que tiene a la lista > of <cuenta de los elementos en ella> -->
-        <li *ngFor='let pokemon of pokemon'> 
-          <a routerLink="/detail/{{pokemon.id}}">
-            <span class="badge">{{pokemon.id}}</span>{{pokemon.name}}
+        <li *ngFor='let character of character'> 
+        
+          <a routerLink="/detail/{{character.id}}">
+            <span class="badge">{{character.id}}</span>{{character.name}}
           </a>
         </li>
         

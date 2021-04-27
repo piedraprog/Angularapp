@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pokemon } from '../pokedata/pokemon'
+import { Characters } from '../../models'
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { PokemonService } from '../../services/pokemon.service';
@@ -13,7 +13,7 @@ import { PokemonService } from '../../services/pokemon.service';
 
 export class PokemonDetailComponent implements OnInit {
 
-  pokemon: Pokemon;
+  pokemon: any;
 
   constructor(
     private route: ActivatedRoute,
@@ -31,11 +31,14 @@ export class PokemonDetailComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
 
     this.pokemonService.getPokemon(id)
-      .subscribe(pokemon => this.pokemon = pokemon);
+      .subscribe( resp =>this.pokemon = resp);
     
      
   }
 
+  save(){
+
+  }
 
   goBack(): void{
     this.location.back();

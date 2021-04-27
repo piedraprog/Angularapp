@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pokemon } from '../pokedata/pokemon';
+import { Characters, Result } from '../../models';
 import { PokemonService } from '../../services/pokemon.service';
 
 
@@ -11,7 +11,7 @@ import { PokemonService } from '../../services/pokemon.service';
 
 export class DashboardComponent implements OnInit {
 
-  pokemon: Pokemon[] = [];
+  character: Characters | Result[];
 
   constructor(private pokemonService: PokemonService) { }
 
@@ -21,6 +21,7 @@ export class DashboardComponent implements OnInit {
 
   getPokemons(): void{
     this.pokemonService.getPokemons()
-      .subscribe( pokemons => this.pokemon = pokemons.slice(1, 5))
-  }
+      .subscribe( resp => this.character = resp) 
+      // .subscribe( resp => this.character = resp.slice(0,5)) 
+  } 
 }
